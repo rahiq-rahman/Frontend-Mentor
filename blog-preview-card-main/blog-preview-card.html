@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    body{
+      padding: 0%;
+      margin: 5%;
+      background:  hsl(47, 88%, 63%);
+      font-family: 'Roboto', sans-serif;;
+    }
+    .card-container{
+      display: flex;
+      justify-content: center;
+    }
+    .card{
+      width: 334px;
+      border: 1px solid hsl(0, 0%, 7%);
+      border-radius: 26px;
+      overflow: hidden;
+      padding: 18px;
+      background: hsl(0, 0%, 100%);
+      box-shadow: 15px 15px;
+    }
+    button{
+      font-weight: bolder;
+      background: hsl(47, 88%, 63%);
+      border: none;
+      color: hsl(0, 0%, 7%);
+      padding: 6px 17px;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+    h2:hover{
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+    .item-1{
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      column-gap: 10px;
+    }
+    .item-1 img{
+      height: 33px;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div style="border-radius: 19px;overflow: hidden;"><img src="assets/images/illustration-article.svg" alt=""></div>
+      <div><button>Learning</button></div>
+      <div><p>Published 21 Dec 2023</p></div>
+      <div><h2>HTML & CSS foundations</h2></div>
+      <div style="color: hsl(0, 0%, 50%);"><p>These languages are the backbone of every website, defining structure, content, and presentation.</p></div>
+      <div class="item-1">
+        <div><img src="assets/images/image-avatar.webp" alt=""></div>
+        <div><p>Greg Hooper</p></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
