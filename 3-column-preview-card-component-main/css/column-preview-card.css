@@ -2,15 +2,16 @@ body{
     margin: 50px 0px;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:  hsl(0, 0%, 95%);
 }
 .wrapper{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     max-width: 1080px;
     border-radius: 13px;
     overflow: hidden;
-
+    justify-content: center;
 }
 .sedans{
     background:  hsl(31, 77%, 52%);
@@ -22,26 +23,27 @@ body{
     background: hsl(179, 100%, 13%);
 }
 .container{
-    padding: 50px;
-    width: 260px;
-    height: 440px;
+    padding: 49px;
+    width: 261px;
+    height: 415px;
 }
 h1 {
-    color: white;
+    color:  hsl(0, 0%, 95%);
     margin-bottom: 30px;
 }
 p{
     line-height: 2;
-    color: white;
+    color: hsla(0, 0%, 100%, 0.75);
     margin-bottom: 100px;
 }
 a{
     text-decoration: none;
     padding: 14px 82px;
-    
-    background-color: white;
+    background-color:  hsl(0, 0%, 95%);
     border-radius: 30px;
     font-weight: bold;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
 }
 svg{
     scale: 1.3;
@@ -54,4 +56,26 @@ svg{
 }
 .luxury a{
     color: hsl(179, 100%, 13%);
+}
+.sedans a:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.suvs a:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.luxury a:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+@media screen and (max-width:769px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+        width: 300px;
+    } 
+
 }
